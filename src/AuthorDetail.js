@@ -37,6 +37,7 @@ class AuthorDetail extends Component {
       });
     } catch (err) {
       console.error(err);
+      this.props.history.push("/not-found");
     }
   };
 
